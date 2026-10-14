@@ -1,59 +1,128 @@
 * {
     box-sizing: border-box;
 }
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f6f8;
-    color: #222;
-}
-header,main,footer {
-    margin: auto;
-    max-width: 900px;
-}
-header {
-    background-color: #1f2937;
-    color: white;
-    padding: 20px;
-    text-align: center;
+    background-color: #f3f5f9;
+    color: #263244;
+    line-height: 1.7;
 }
 
-header h1 {
+.profile-header {
+    background: linear-gradient(135deg, #172554, #334b78);
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.profile-header h1 {
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
+}
+
+.job-title {
+    font-size: 1.15rem;
+    color: #dbeafe;
+    margin-bottom: 0;
+}
+
+.contact-links .btn {
+    min-width: 100px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: transform 0.2s ease;
+}
+
+.contact-links .btn:hover {
+    transform: translateY(-2px);
+}
+
+.cv-card {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #e4e9f1;
+    box-shadow: 0 4px 14px rgba(23, 37, 84, 0.05);
+    height: 100%;
+}
+
+.cv-card h2 {
+    font-size: 1.3rem;
+    color: #1e3a5f;
+    padding-bottom: 10px;
+    margin-bottom: 18px;
+    border-bottom: 2px solid #dbe5f2;
+}
+
+.cv-card h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.skill-list,
+.language-list {
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+.skill-list li,
+.language-list li {
     margin-bottom: 10px;
 }
 
-header p {
-    font-size: 18px;
-}
-section {
-    background-color: white;
-    padding: 25px;
-    margin: 20px 0;
-    border-radius: 10px;
-}
-h2 {
-    color: #1f2937;
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 10px;
-}
-ul {
-    padding-left: 20px;
+.skill-list li::marker {
+    color: #456da5;
 }
 
-li {
-    margin-bottom: 8px;
-    line-height: 1.6;
+footer {
+    color: #667085;
+    font-size: 0.9rem;
 }
-@media (max-width: 600px) {
-    header {
-        padding: 25px 15px;
+
+@media (max-width: 576px) {
+    .profile-header .container {
+        padding-top: 35px !important;
+        padding-bottom: 35px !important;
     }
 
-    section {
-        padding: 18px;
+    .profile-header h1 {
+        font-size: 2rem;
     }
 
-    header h1 {
-        font-size: 28px;
+    .job-title {
+        font-size: 1rem;
     }
+
+    .cv-card {
+        padding: 20px;
+    }
+
+    .cv-card h2 {
+        font-size: 1.15rem;
+    }
+}
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    width: 100%;
+}
+
+footer {
+    margin-top: auto;
+    border-top: 1px solid #e4e9f1;
+    background-color: #ffffff;
 }
