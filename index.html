@@ -4,106 +4,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Maha Friehat | Computer Engineering CV</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body>
+<body class="min-h-screen flex flex-col m-0 bg-[#f3f5f9] text-[#263244] font-sans leading-[1.7]">
 
-    <header class="profile-header text-center">
-        <div class="container py-5">
-            <h1 class="display-5 fw-bold">Maha Friehat</h1>
+    <!-- Header -->
+    <header class="bg-gradient-to-br from-[#172554] to-[#334b78] text-white">
+        <div class="mx-auto max-w-5xl px-4 py-10 sm:py-12 text-center">
 
-            <p class="job-title">Computer Engineering Student</p>
+            <h1 class="mb-3 text-3xl sm:text-4xl font-bold tracking-[0.5px]">
+                Maha Friehat
+            </h1>
 
-            <div class="contact-links d-flex justify-content-center
-                        flex-wrap gap-3 mt-4">
-                <a href="mailto:mahafriehat7@gmail.com" class="btn btn-light">
+            <p class="text-[1.15rem] text-[#dbeafe] mb-0">
+                Computer Engineering Student
+            </p>
+
+            <!-- Contact Buttons -->
+            <div class="mt-4 flex flex-wrap justify-center gap-3">
+
+                <a href="mailto:mahafriehat7@gmail.com"
+                    class="min-w-[100px] rounded-lg bg-white px-4 py-2 text-[#172554] font-semibold transition-transform duration-200 hover:-translate-y-0.5">
                     Email
                 </a>
 
-                <a href="tel:+962772116862" class="btn btn-outline-light">
+                <a href="tel:+962772116862"
+                    class="min-w-[100px] rounded-lg border border-white px-4 py-2 text-white font-semibold transition-transform duration-200 hover:-translate-y-0.5">
                     Phone
                 </a>
+
             </div>
         </div>
     </header>
 
-    <main class="container py-4">
-        <div class="row g-4">
-    
-            <div class="col-12">
-                <section class="cv-card">
-                    <h2>Career Objective</h2>
-    
-                    <p>
-                        Computer Engineering student at The Hashemite
-                        University, currently in the fifth year of study
-                        and expected to graduate in the first semester
-                        of the 2026/2027 academic year.Interested in cybersecurity, computer networks,
-                        software development, and information technology.
-                        Currently pursuing CCNA training through Cisco
-                        to strengthen networking knowledge and practical
-                        skills.Seeking an internship opportunity to apply
-                        academic knowledge in a professional environment,
-                        develop practical technical skills, and contribute
-                        to real-world engineering projects.
-                    </p>
+    <!-- Main Content -->
+    <main class="mx-auto w-full max-w-5xl flex-1 px-4 py-4">
 
-                </section>
-            </div>
-    
-            <div class="col-12">
-                <section class="cv-card">
-                    <h2>Education</h2>
-    
-                    <h3>Bachelor's Degree in Computer Engineering</h3>
-                    <p class="mb-1">The Hashemite University</p>
-                    <p class="text-secondary mb-0">2022 – Present</p>
-                </section>
-            </div>
-    
-            <div class="col-12">
-                <section class="cv-card">
-                    <h2>Projects</h2>
-    
-                    <h3>SIEM & Machine Learning Threat Detection</h3>
-                    <p class="mb-0">
-                        A cybersecurity project focused on detecting
-                        cyber threats using SIEM and machine learning.
-                    </p>
-                </section>
-            </div>
+        <div class="flex flex-col gap-4">
 
-            <div class="col-12">
-                <section class="cv-card">
-                    <h2>Technical Skills</h2>
-    
-                    <ul class="skill-list">
-                        <li>Computer Networking</li>
-                        <li>Python</li>
-                        <li>C++</li>
-                    </ul>
-                </section>
-            </div>
-    
-            <div class="col-12">
-                <section class="cv-card">
-                    <h2>Languages</h2>
-    
-                    <ul class="language-list">
-                        <li><strong>Arabic:</strong> Native</li>
-                        <li><strong>English:</strong> Good</li>
-                    </ul>
-                </section>
-            </div>
-    
+            <!-- Career Objective -->
+            <section
+                class="rounded-xl border border-[#e4e9f1] bg-white p-5 sm:p-[25px] shadow-[0_4px_14px_rgba(23,37,84,0.05)]">
+
+                <h2 class="mb-[18px] border-b-2 border-[#dbe5f2] pb-[10px] text-[1.3rem] font-normal text-[#1e3a5f]">
+                    Career Objective
+                </h2>
+
+                <p>
+                    Computer Engineering student at The Hashemite
+                    University, currently in the fifth year of study
+                    and expected to graduate in the first semester
+                    of the 2026/2027 academic year. Interested in cybersecurity,
+                    computer networks, software development, and information
+                    technology. Currently pursuing CCNA training through Cisco
+                    to strengthen networking knowledge and practical skills.
+                    Seeking an internship opportunity to apply academic
+                    knowledge in a professional environment, develop practical
+                    technical skills, and contribute to real-world engineering projects.
+                </p>
+
+            </section>
+
+            <!-- Education -->
+            <section
+                class="rounded-xl border border-[#e4e9f1] bg-white p-5 sm:p-[25px] shadow-[0_4px_14px_rgba(23,37,84,0.05)]">
+
+                <h2 class="mb-[18px] border-b-2 border-[#dbe5f2] pb-[10px] text-[1.3rem] font-normal text-[#1e3a5f]">
+                    Education
+                </h2>
+
+                <h3 class="mb-3 text-[1.05rem] font-bold leading-6">
+                    Bachelor's Degree in Computer Engineering
+                </h3>
+
+                <p class="mb-1">
+                    The Hashemite University
+                </p>
+
+                <p class="mb-0 text-[#667085]">
+                    2022 – Present
+                </p>
+
+            </section>
+
+            <!-- Projects -->
+            <section
+                class="rounded-xl border border-[#e4e9f1] bg-white p-5 sm:p-[25px] shadow-[0_4px_14px_rgba(23,37,84,0.05)]">
+
+                <h2 class="mb-[18px] border-b-2 border-[#dbe5f2] pb-[10px] text-[1.3rem] font-normal text-[#1e3a5f]">
+                    Projects
+                </h2>
+
+                <h3 class="mb-3 text-[1.05rem] font-bold leading-6">
+                    SIEM & Machine Learning Threat Detection
+                </h3>
+
+                <p class="mb-0">
+                    A cybersecurity project focused on detecting
+                    cyber threats using SIEM and machine learning.
+                </p>
+
+            </section>
+
+            <!-- Technical Skills -->
+            <section
+                class="rounded-xl border border-[#e4e9f1] bg-white p-5 sm:p-[25px] shadow-[0_4px_14px_rgba(23,37,84,0.05)]">
+
+                <h2 class="mb-[18px] border-b-2 border-[#dbe5f2] pb-[10px] text-[1.3rem] font-normal text-[#1e3a5f]">
+                    Technical Skills
+                </h2>
+
+                <ul class="mb-0 list-disc pl-5 marker:text-[#456da5] [&>li]:mb-[10px] [&>li:last-child]:mb-0">
+                    <li>Computer Networking</li>
+                    <li>Python</li>
+                    <li>C++</li>
+                </ul>
+
+            </section>
+
+            <!-- Languages -->
+            <section
+                class="rounded-xl border border-[#e4e9f1] bg-white p-5 sm:p-[25px] shadow-[0_4px_14px_rgba(23,37,84,0.05)]">
+
+                <h2 class="mb-[18px] border-b-2 border-[#dbe5f2] pb-[10px] text-[1.3rem] font-normal text-[#1e3a5f]">
+                    Languages
+                </h2>
+
+                <ul class="mb-0 list-disc pl-5 [&>li]:mb-[10px] [&>li:last-child]:mb-0">
+                    <li><strong>Arabic:</strong> Native</li>
+                    <li><strong>English:</strong> Good</li>
+                </ul>
+
+            </section>
+
         </div>
     </main>
-    
-    <footer class="text-center py-4">
-        <p class="mb-0">&copy; 2026 Maha Friehat</p>
+
+    <!-- Footer -->
+    <footer class="mt-auto border-t border-[#e4e9f1] bg-white px-4 py-4 text-center text-[0.9rem] text-[#667085]">
+
+        <p class="mb-0">
+            &copy; 2026 Maha Friehat
+        </p>
+
     </footer>
 
 </body>
